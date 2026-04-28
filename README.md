@@ -1,178 +1,57 @@
 # PromptOS 🧠💻
 ![alt text](image.png)
-**PromptOS** is a futuristic **AI-powered Web Operating System** that runs directly in the browser.
-Instead of clicking apps traditionally, users can **control the system using natural language commands** in a prompt interface.
 
-PromptOS combines the feel of a **desktop OS** with the simplicity of a **command-based AI assistant**.
+PromptOS is a web-based OS concept I built where you control everything using text commands instead of clicking buttons.
+It runs directly in the browser and tries to feel like a real desktop environment — but with an AI-style prompt controlling it.
 
----
+# 🚀 What it does
 
-# ✨ Features
-
-## 🖥 Desktop Environment
-
-* Modern web-based desktop UI
-* Window-based application system
-* Draggable application windows
-* Maximize / Close window controls
-* Desktop icons with click support
-
-## 🔐 Lock Screen
-
-* Animated lock screen
-* Dynamic time & date display
-* Click to unlock interaction
-* Custom wallpaper support
-
-## ⌨ Prompt Command Interface
-
-Users can control the OS using text commands such as:
-
+Instead of opening apps normally, you just type things like:
 ```
 open notepad
-launch notes
-run calculator
-start browser
 ```
 
-PromptOS intelligently understands commands even with **small spelling mistakes**.
-
-Example:
-
+Even if you type something slightly wrong:
 ```
-ope notpad
-opn note
+opn notpad
+ope note
 ```
+it still figures out what you mean and opens the app in descktop.
+its still can open one app.
 
-PromptOS will still open **Notepad**.
+-----
+# 🖥 Desktop UI
 
-## 🤖 AI Response System
+I built a simple desktop-style interface with:
 
-PromptOS includes a **built-in AI assistant interface**.
+- draggable windows
+- open multiple apps at once
+- basic window controls (close / maximize)
+- desktop icons
 
-When a command is executed, the AI responds with a system message:
+Nothing crazy, just trying to recreate that OS feel in the browser.
 
-```
-Opening Notepad...
-Launching workspace...
-Application ready.
-```
+-----
 
-The response appears in a floating **AI response card**.
+# 🔐 Lock Screen
 
-## 🪟 Window Manager
+There’s also a lock screen with:
 
-PromptOS supports:
-
-* Multiple open apps
-* Z-index window focus
-* Window dragging
-* Window maximize
-* Window closing
-
-## 📱 Responsive UI
-
-Designed using modern CSS for responsive layouts and smooth animations.
-
----
-
-# 📦 Built With
-
-* **HTML5**
-* **CSS3**
-* **Vanilla JavaScript**
-* Browser DOM APIs
-
-No frameworks required.
-
----
-
-# 🧩 Application System
-
-Apps are registered inside a **JavaScript app registry**.
-
-Example:
-
-```javascript
-const apps = {
-  notepad: {
-    title: "Notepad",
-    icon: "📝",
-    width: 420,
-    height: 300,
-    content: `<textarea placeholder="Start typing..."></textarea>`
-  }
-};
-```
-
-PromptOS automatically:
-
-* Generates desktop icons
-* Handles app launching
-* Creates windows dynamically
-
----
-
-# 💬 Prompt Command System
-
-Commands are parsed and matched against installed apps.
-
-Example flow:
-
-1. User types a command
-2. Command is normalized
-3. PromptOS searches installed apps
-4. App launches automatically
-
----
-
-# 📂 Project Structure
-
-```
-PromptOS
-│
-├── index.html
-├── style.css
-├── script.js
-│
-├── images
-│   ├── wallpaper1.png
-│   └── lockscreen.png
-│
-└── README.md
-```
-
----
-
-# 🚀 Future Features
-
-Planned upgrades for PromptOS:
-
-* AI assistant powered by LLM
-* Voice commands
-* File explorer
-* Terminal emulator
-* Web browser app
-* Plugin system
-* Custom themes
-* App marketplace
-
----
-
-# 🎯 Vision
-
-PromptOS explores the idea of a **next-generation operating system** where users interact with their computer using **natural language instead of buttons**.
-
-It aims to simulate how **AI-native operating systems** might work in the future.
+- time & date
+- click to unlock
  
----
+-----
+Just to make it feel a bit more like a real system.
 
-# 📜 License
+# 🔮 What I want to add next
 
-This project is open-source and available under the **MIT License**.
+Some ideas I’m thinking about:
 
----
+- real AI integration
+- file system
+- add more apps 
 
-# ⭐ Support
+----
 
-If you like this project, consider giving it a ⭐ on GitHub!
+ ⭐
+If you think this is cool, feel free to star it.
