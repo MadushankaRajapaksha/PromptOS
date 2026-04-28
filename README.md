@@ -1,5 +1,4 @@
 # PromptOS 🧠💻
-![alt text](image.png)
 
 PromptOS is a web-based OS concept I built where you control everything using text commands instead of clicking buttons.
 It runs directly in the browser and tries to feel like a real desktop environment — but with an AI-style prompt controlling it.
