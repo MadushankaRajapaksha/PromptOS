@@ -80,6 +80,27 @@ if (IconCon) {
   }
 }
 
+// ---------------- ICON CLICK OPEN ----------------
+if (IconCon) {
+  IconCon.addEventListener("click", (e) => {
+    const icon = e.target.closest(".icon");
+
+    if (!icon) return;
+
+    const appId = icon.dataset.app;
+
+    // optional AI response (same feel as prompt)
+    const app = apps[appId];
+    if (app) {
+      showAIResponse("Opening <b>" + app.title + "</b>...");
+      
+      setTimeout(() => {
+        openApp(appId);
+      }, 400);
+    }
+  });
+}
+
 // ---------------- WINDOW SYSTEM ----------------
 const windowContainer = document.querySelector(".windowContainer");
 
@@ -183,7 +204,7 @@ if (closeBtn) {
 
 const promptInput = document.querySelector(".promptBox textarea");
 
-const commandWords = ["open", "launch", "start", "run", "ope", "opn"];
+const commandWords = ["open", "launch", "start", "run", "ope", "opn", "op"];
 
 function normalizeCommand(text) {
   return text
